@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3dyi3cvkq76x"
-path="res://.godot/imported/newghostie-idle.png-a0b1979c625709e3b30881318f4ef606.ctex"
+uid="uid://d4cppsy5bc4b6"
+path="res://.godot/imported/icecream_vanilla.png-cb031496dbe7fd45bc7c2d305f169df3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ghosts/newghostie-idle.png"
-dest_files=["res://.godot/imported/newghostie-idle.png-a0b1979c625709e3b30881318f4ef606.ctex"]
+source_file="res://components/icecream-cones/icecream_vanilla.png"
+dest_files=["res://.godot/imported/icecream_vanilla.png-cb031496dbe7fd45bc7c2d305f169df3.ctex"]
 
 [params]
 

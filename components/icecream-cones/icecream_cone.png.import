@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d002vseqrrs8l"
-path="res://.godot/imported/Background.png-6d72d35f07f42b3845e8764c552bb4fb.ctex"
+uid="uid://bs15od2sp8cx0"
+path="res://.godot/imported/icecream_cone.png-0d8e0cb6b8a561a62b81ed6757226fcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Background.png"
-dest_files=["res://.godot/imported/Background.png-6d72d35f07f42b3845e8764c552bb4fb.ctex"]
+source_file="res://components/icecream-cones/icecream_cone.png"
+dest_files=["res://.godot/imported/icecream_cone.png-0d8e0cb6b8a561a62b81ed6757226fcb.ctex"]
 
 [params]
 

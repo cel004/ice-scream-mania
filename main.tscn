@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b66cc7tswu4fp"]
+[gd_scene load_steps=5 format=3 uid="uid://b66cc7tswu4fp"]
 
 [ext_resource type="Texture2D" uid="uid://d002vseqrrs8l" path="res://assets/Background.png" id="1_0cwv2"]
 [ext_resource type="Texture2D" uid="uid://cv6ed05248kj5" path="res://assets/Foreground.png" id="2_2ufsh"]
+[ext_resource type="PackedScene" uid="uid://cpvdtyhnf7w3k" path="res://assets/ghosts/ghostie-idle.aseprite" id="3_fynei"]
+[ext_resource type="Script" path="res://assets/ghosts/NewghostieIdle.cs" id="4_rvrsf"]
 
 [node name="Node" type="Node"]
 
@@ -14,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_0cwv2")
+stretch_mode = 1
 
 [node name="fg (TextureRect)" type="TextureRect" parent="bg (TextureRect)"]
 z_index = 1
@@ -26,5 +29,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2ufsh")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-z_index = -1
+[node name="ghostie-idle" parent="." instance=ExtResource("3_fynei")]
+texture_filter = 1
+position = Vector2(609, 220)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("4_rvrsf")

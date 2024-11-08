@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx226dlgii6is"
-path="res://.godot/imported/popsicle_neopolitan.png-d58052a3934af8fea41434b4e2502609.ctex"
+uid="uid://vh76kr0h6iqw"
+path="res://.godot/imported/popsicle_firecrackers.png-243caa6e9a5c4257ec59bc47a332f2a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icecreams/popsicle_neopolitan.png"
-dest_files=["res://.godot/imported/popsicle_neopolitan.png-d58052a3934af8fea41434b4e2502609.ctex"]
+source_file="res://components/popsicles/popsicle_firecrackers.png"
+dest_files=["res://.godot/imported/popsicle_firecrackers.png-243caa6e9a5c4257ec59bc47a332f2a4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbkle2tegcqni"
-path="res://.godot/imported/scoop_chocolate.png-e158bad3c19830831297561056b84e35.ctex"
+uid="uid://c17rjetnkwyfk"
+path="res://.godot/imported/Spreadsheet.png-f5ea6b3aa505971a67a50da83d32f5c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icecreams/scoop_chocolate.png"
-dest_files=["res://.godot/imported/scoop_chocolate.png-e158bad3c19830831297561056b84e35.ctex"]
+source_file="res://scenes/icecream-parlour/Spreadsheet.png"
+dest_files=["res://.godot/imported/Spreadsheet.png-f5ea6b3aa505971a67a50da83d32f5c6.ctex"]
 
 [params]
 

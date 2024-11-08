@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="ice-scream-mania"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
 
 [aseprite_importers]
 
 aseprite_executable_path="C:/Users/cel/Desktop/Aesprite/Aseprite.exe"
+
+[dotnet]
+
+project/assembly_name="ice-scream-mania"
 
 [editor_plugins]
 

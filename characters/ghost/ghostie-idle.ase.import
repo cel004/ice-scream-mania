@@ -2,13 +2,13 @@
 
 importer="Aseprite AnimatedSprite2D Import"
 type="PackedScene"
-uid="uid://cpvdtyhnf7w3k"
-path="res://.godot/imported/newghostie-idle.aseprite-8e44580370b602670a830ec41615db92.scn"
+uid="uid://bdv22vw1vylnn"
+path="res://.godot/imported/ghostie-idle.ase-406c5dbc35eb0c31844455832d80778b.scn"
 
 [deps]
 
-source_file="res://assets/ghosts/newghostie-idle.aseprite"
-dest_files=["res://.godot/imported/newghostie-idle.aseprite-8e44580370b602670a830ec41615db92.scn"]
+source_file="res://characters/ghost/ghostie-idle.ase"
+dest_files=["res://.godot/imported/ghostie-idle.ase-406c5dbc35eb0c31844455832d80778b.scn"]
 
 [params]
 
