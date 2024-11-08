@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bai8juh4eqpv2"
-path="res://.godot/imported/blue-ghost.png-a9cf559220730b9a5762ce59ec12c540.ctex"
+uid="uid://c3dyi3cvkq76x"
+path="res://.godot/imported/newghostie-idle.png-a0b1979c625709e3b30881318f4ef606.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ghosts/blue-ghost.png"
-dest_files=["res://.godot/imported/blue-ghost.png-a9cf559220730b9a5762ce59ec12c540.ctex"]
+source_file="res://assets/ghosts/newghostie-idle.png"
+dest_files=["res://.godot/imported/newghostie-idle.png-a0b1979c625709e3b30881318f4ef606.ctex"]
 
 [params]
 
