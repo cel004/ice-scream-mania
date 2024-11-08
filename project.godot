@@ -12,7 +12,14 @@ config_version=5
 
 config/name="ice-scream-mania"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[aseprite_importers]
+
+aseprite_executable_path="C:/Users/cel/Desktop/Aesprite/Aseprite.exe"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/nklbdev.aseprite_importers/plugin.cfg")
 
 [rendering]
 

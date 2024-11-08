@@ -1,0 +1,25 @@
+[remap]
+
+importer="Aseprite AnimatedSprite2D Import"
+type="PackedScene"
+uid="uid://b0g00uc2pe3nt"
+path="res://.godot/imported/blue-ghost.ase-e0508e561a350175f38ea4bc486395c3.scn"
+
+[deps]
+
+source_file="res://assets/ghosts/blue-ghost.ase"
+dest_files=["res://.godot/imported/blue-ghost.ase-e0508e561a350175f38ea4bc486395c3.scn"]
+
+[params]
+
+spritesheet/layout=0
+spritesheet/fixed_rows_count=1
+spritesheet/fixed_columns_count=1
+spritesheet/border_type=0
+spritesheet/trim=false
+spritesheet/ignore_empty=false
+spritesheet/merge_duplicates=false
+animation/default/name="default"
+animation/default/direction=0
+animation/default/repeat_count=0
+animation/autoplay=""
