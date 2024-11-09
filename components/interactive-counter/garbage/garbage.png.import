@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o11kih0unst7"
-path="res://.godot/imported/ghostie-idle.png-59f12d30329992e8fd6807f72249bf44.ctex"
+uid="uid://s4qv0ydbfqt"
+path="res://.godot/imported/garbage.png-dfb6b1e461ee118ff37033fa50fe6880.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/ghost/ghostie-idle.png"
-dest_files=["res://.godot/imported/ghostie-idle.png-59f12d30329992e8fd6807f72249bf44.ctex"]
+source_file="res://components/interactive-counter/garbage/garbage.png"
+dest_files=["res://.godot/imported/garbage.png-dfb6b1e461ee118ff37033fa50fe6880.ctex"]
 
 [params]
 

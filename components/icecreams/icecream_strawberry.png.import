@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o11kih0unst7"
-path="res://.godot/imported/ghostie-idle.png-59f12d30329992e8fd6807f72249bf44.ctex"
+uid="uid://b2ts6whc75m0m"
+path="res://.godot/imported/icecream_strawberry.png-f56b28eb9563327293c770b37712c81c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/ghost/ghostie-idle.png"
-dest_files=["res://.godot/imported/ghostie-idle.png-59f12d30329992e8fd6807f72249bf44.ctex"]
+source_file="res://components/icecreams/icecream_strawberry.png"
+dest_files=["res://.godot/imported/icecream_strawberry.png-f56b28eb9563327293c770b37712c81c.ctex"]
 
 [params]
 

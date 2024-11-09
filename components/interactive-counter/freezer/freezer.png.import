@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4cppsy5bc4b6"
-path="res://.godot/imported/icecream_vanilla.png-cb031496dbe7fd45bc7c2d305f169df3.ctex"
+uid="uid://uaqxaekkurlb"
+path="res://.godot/imported/freezer.png-529f83be6f9689b16a6d476062ebabf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://components/icecream-cones/icecream_vanilla.png"
-dest_files=["res://.godot/imported/icecream_vanilla.png-cb031496dbe7fd45bc7c2d305f169df3.ctex"]
+source_file="res://components/interactive-counter/freezer/freezer.png"
+dest_files=["res://.godot/imported/freezer.png-529f83be6f9689b16a6d476062ebabf2.ctex"]
 
 [params]
 

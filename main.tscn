@@ -1,36 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://b66cc7tswu4fp"]
+[gd_scene load_steps=6 format=3 uid="uid://bgyxaxjonq1ts"]
 
-[ext_resource type="Texture2D" uid="uid://d002vseqrrs8l" path="res://assets/Background.png" id="1_0cwv2"]
-[ext_resource type="Texture2D" uid="uid://cv6ed05248kj5" path="res://assets/Foreground.png" id="2_2ufsh"]
-[ext_resource type="PackedScene" uid="uid://cpvdtyhnf7w3k" path="res://assets/ghosts/ghostie-idle.aseprite" id="3_fynei"]
-[ext_resource type="Script" path="res://assets/ghosts/NewghostieIdle.cs" id="4_rvrsf"]
+[ext_resource type="Texture2D" uid="uid://d002vseqrrs8l" path="res://scenes/icecream-parlour/Background.png" id="1_wx320"]
+[ext_resource type="Texture2D" uid="uid://cv6ed05248kj5" path="res://scenes/icecream-parlour/Foreground.png" id="2_rarfs"]
+[ext_resource type="Script" path="res://components/interactive-counter/icecream-cones/Drag.cs" id="3_h5fu3"]
+[ext_resource type="Texture2D" uid="uid://bs15od2sp8cx0" path="res://components/icecreams/icecream_cone.png" id="4_ehc5t"]
 
-[node name="Node" type="Node"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dxo2"]
+size = Vector2(308, 171)
 
-[node name="bg (TextureRect)" type="TextureRect" parent="."]
-z_index = -2
+[node name="Node2D" type="Node2D"]
+
+[node name="bg" type="TextureRect" parent="."]
 texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_0cwv2")
-stretch_mode = 1
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_wx320")
 
-[node name="fg (TextureRect)" type="TextureRect" parent="bg (TextureRect)"]
-z_index = 1
+[node name="fg" type="TextureRect" parent="."]
 texture_filter = 1
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_2ufsh")
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_rarfs")
 
-[node name="ghostie-idle" parent="." instance=ExtResource("3_fynei")]
+[node name="Cone" type="Node2D" parent="."]
+script = ExtResource("3_h5fu3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cone"]
 texture_filter = 1
-position = Vector2(609, 220)
-scale = Vector2(1.5, 1.5)
-script = ExtResource("4_rvrsf")
+position = Vector2(146, 271)
+scale = Vector2(3.38138, 3.38138)
+texture = ExtResource("4_ehc5t")
+
+[node name="Area2D" type="Area2D" parent="Cone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cone/Area2D"]
+position = Vector2(154, 275.5)
+shape = SubResource("RectangleShape2D_7dxo2")
+
+[connection signal="input_event" from="Cone/Area2D" to="Cone" method="_on_area_2d_input_event"]

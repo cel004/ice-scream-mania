@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c17rjetnkwyfk"
-path="res://.godot/imported/Spreadsheet.png-f5ea6b3aa505971a67a50da83d32f5c6.ctex"
+path="res://.godot/imported/Spreadsheet.png-104090dcb1feccc48ce427634e509dab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/icecream-parlour/Spreadsheet.png"
-dest_files=["res://.godot/imported/Spreadsheet.png-f5ea6b3aa505971a67a50da83d32f5c6.ctex"]
+source_file="res://components/interactive-counter/Spreadsheet.png"
+dest_files=["res://.godot/imported/Spreadsheet.png-104090dcb1feccc48ce427634e509dab.ctex"]
 
 [params]
 

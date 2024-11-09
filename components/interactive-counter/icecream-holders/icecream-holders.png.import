@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl3jg3nscjrl4"
-path="res://.godot/imported/icecream_chocolate.png-843cfd3b29d71ed581fdaf61111ec417.ctex"
+uid="uid://bhrhfqourjshh"
+path="res://.godot/imported/icecream-holders.png-77f8a2e6049c6a215adac20997ae988f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://components/icecream-cones/icecream_chocolate.png"
-dest_files=["res://.godot/imported/icecream_chocolate.png-843cfd3b29d71ed581fdaf61111ec417.ctex"]
+source_file="res://components/interactive-counter/icecream-holders/icecream-holders.png"
+dest_files=["res://.godot/imported/icecream-holders.png-77f8a2e6049c6a215adac20997ae988f.ctex"]
 
 [params]
 
