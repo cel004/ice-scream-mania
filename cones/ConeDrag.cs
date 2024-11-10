@@ -13,12 +13,10 @@ public partial class ConeDrag : Node2D
         }
     }
 
-    
     private void FollowMouse()
     {
         GlobalPosition = GetViewport().GetMousePosition() + mouseOffset;    // pos = pos of mouse + mouse offset -> smooth dragging
     }
-
 
     private void _OnArea2DInputEvent(Node viewport, InputEvent @event, long shapeIdx)//+
     {
