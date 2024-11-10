@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsanblfwofyng"]
+
+[ext_resource type="Texture2D" uid="uid://b63g4yqu3xsoc" path="res://main/Background.png" id="1_vwdqi"]
+[ext_resource type="Texture2D" uid="uid://btkb1pqjwchqp" path="res://main/Foreground.png" id="2_1p4ms"]
+
+[node name="main" type="Node"]
+
+[node name="background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vwdqi")
+stretch_mode = 1
+
+[node name="foreground" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1p4ms")
