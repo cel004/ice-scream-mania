@@ -36,7 +36,7 @@ public partial class ConeDrag : Node2D
                 instance = (Node2D)cone.Instantiate();  // creates new instance of cone when clicked
                 AddChild(instance);
 
-                mouseOffset = GlobalPosition - GetViewport().GetMousePosition();    // offset for smooth dragging
+                mouseOffset = instance.GlobalPosition;    // offset so that cone spawns at mouse position
                 _selected = true;
             }
             else if(!mouseEvent.Pressed && instance!= null)
