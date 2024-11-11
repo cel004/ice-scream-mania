@@ -39,8 +39,10 @@ public partial class ConeDrag : Node2D
                 mouseOffset = GlobalPosition - GetViewport().GetMousePosition();    // offset for smooth dragging
                 _selected = true;
             }
-            else
+            else if(!mouseEvent.Pressed && instance!= null)
             {
+                instance.QueueFree();   // removes cone from scene
+                instance = null;
                 _selected = false;
                 // GD.Print("Cone scene is null");   // for debugging
             }
