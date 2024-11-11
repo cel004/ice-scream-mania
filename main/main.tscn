@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsanblfwofyng"]
+[gd_scene load_steps=5 format=3 uid="uid://bsanblfwofyng"]
 
 [ext_resource type="Texture2D" uid="uid://b63g4yqu3xsoc" path="res://main/Background.png" id="1_vwdqi"]
 [ext_resource type="Texture2D" uid="uid://btkb1pqjwchqp" path="res://main/Foreground.png" id="2_1p4ms"]
 [ext_resource type="Script" path="res://cones/ConeDrag.cs" id="3_p1q0l"]
-[ext_resource type="Texture2D" uid="uid://4cciquynvfat" path="res://cones/icecream_cone.png" id="4_mohva"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufyug"]
 size = Vector2(310, 150)
@@ -39,8 +38,4 @@ position = Vector2(154, 285)
 shape = SubResource("RectangleShape2D_ufyug")
 debug_color = Color(0.685474, 0.483375, 0.36598, 0.42)
 
-[node name="Sprite2D" type="Sprite2D" parent="conePile"]
-texture_filter = 1
-position = Vector2(150, 262)
-scale = Vector2(2.5625, 2.5625)
-texture = ExtResource("4_mohva")
+[connection signal="input_event" from="conePile/pileOfCones" to="conePile" method="_on_pile_of_cones_input_event"]

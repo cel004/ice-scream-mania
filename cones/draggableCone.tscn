@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://o6hugcjqeo0n"]
+
+[ext_resource type="Script" path="res://cones/ConeDrag.cs" id="1_hs356"]
+[ext_resource type="Texture2D" uid="uid://4cciquynvfat" path="res://cones/icecream_cone.png" id="1_v8giu"]
+
+[node name="DraggableCone" type="Node2D"]
+script = ExtResource("1_hs356")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.281, 3.281)
+texture = ExtResource("1_v8giu")
