@@ -5,9 +5,9 @@ public partial class ConeDrag : Node2D
     private bool _selected = false;
     private Vector2 mouseOffset = Vector2.Zero;
 
-    private Node2D instance;    // creates new instance of cone when clicked
+    private Node2D _instance;    // creates new instance of cone when clicked
     private Area2D _pileOfCones;  // store reference to pileOfCones
-    private PackedScene cone;   // packed scene for cone (draggableCone.tscn)
+    private PackedScene _cone;   // packed scene for cone (draggableCone.tscn)
 
     public void SetPileOfCones(Area2D pileOfCones)
     {
@@ -16,7 +16,7 @@ public partial class ConeDrag : Node2D
 
     public override void _Process(double delta)     // if mouse left clicks = object follows mouse
     {
-        if (_selected && instance != null)
+        if (_selected && _instance != null)
         {
             FollowMouse();
         }
@@ -24,34 +24,49 @@ public partial class ConeDrag : Node2D
 
     private void FollowMouse()
     {
-        instance.GlobalPosition = GetViewport().GetMousePosition() + mouseOffset;    // pos = pos of mouse + mouse offset -> smooth dragging
+        _instance.GlobalPosition = GetViewport().GetMousePosition() + mouseOffset;    // pos = pos of mouse + mouse offset -> smooth dragging
+    }
+
+    private void _createCone(){
+        if(_instance != null){
+            return;
+        }
+
+        _instance = (Node2D)_cone.Instantiate();  // creates new instance of cone when clicked
+        AddChild(_instance);
+
+        mouseOffset = _instance.GlobalPosition;    // offset so that cone spawns at mouse position
+        _selected = true;
+    }
+
+    private void _removeCone(){
+        if(_instance == null){
+            return;
+        }
+        _instance.QueueFree();   // removes cone from scene
+        _instance = null;
+        _selected = false;
+        // GD.Print("Cone scene is null");   // for debugging
     }
 
     private void _OnArea2DInputEvent(Node viewport, InputEvent @event, long shapeIdx)
     {
         if (@event is InputEventMouseButton mouseEvent && mouseEvent.ButtonIndex == MouseButton.Left)
         {
-            if (mouseEvent.Pressed && instance == null && cone != null)
+            if (mouseEvent.Pressed && _instance == null && _cone != null)
             {
-                instance = (Node2D)cone.Instantiate();  // creates new instance of cone when clicked
-                AddChild(instance);
-
-                mouseOffset = instance.GlobalPosition;    // offset so that cone spawns at mouse position
-                _selected = true;
+                _createCone();
+                
             }
-            else if(!mouseEvent.Pressed && instance!= null)
-            {
-                instance.QueueFree();   // removes cone from scene
-                instance = null;
-                _selected = false;
-                // GD.Print("Cone scene is null");   // for debugging
+            else{
+                _removeCone();
             }
         }
     }
 
     public override void _Ready()
     {
-        cone = GD.Load<PackedScene>("res://cones/draggableCone.tscn");  // loads cone scene
+        _cone = GD.Load<PackedScene>("res://cones/draggableCone.tscn");  // loads cone scene
         _pileOfCones = GetNodeOrNull<Area2D>("/root/main/conePile/pileOfCones");    // reference to pileOfCones in the scene
         _pileOfCones.InputEvent += _OnArea2DInputEvent;
         
