@@ -28,14 +28,14 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1p4ms")
 
-[node name="conePile" type="Node2D" parent="."]
+[node name="spawnCone" type="Node2D" parent="."]
 script = ExtResource("3_p1q0l")
 
-[node name="pileOfCones" type="Area2D" parent="conePile"]
+[node name="pileOfCones" type="Area2D" parent="spawnCone"]
 
-[node name="coneShape" type="CollisionShape2D" parent="conePile/pileOfCones"]
+[node name="coneShape" type="CollisionShape2D" parent="spawnCone/pileOfCones"]
 position = Vector2(154, 285)
 shape = SubResource("RectangleShape2D_ufyug")
 debug_color = Color(0.685474, 0.483375, 0.36598, 0.42)
 
-[connection signal="input_event" from="conePile/pileOfCones" to="conePile" method="_on_pile_of_cones_input_event"]
+[connection signal="input_event" from="spawnCone/pileOfCones" to="spawnCone" method="_on_pile_of_cones_input_event"]
